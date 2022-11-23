@@ -1,0 +1,84 @@
+/* #almacena variables no existe en html */
+:root {
+  --blanco: white;
+  --oscuro: #436F08;
+  --oscruclaro: #B7D34E;
+  --cafe: #DAC49B;
+  --fuenteprincipal: 3.8rem;
+}
+
+/* 1 rem a 10 px se adpatan para una pantalla alta */
+html {
+  font-size: 62.5%;
+
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Krub', sans-serif;
+}
+
+.titulo {
+  /* centrar */
+  text-align: center;
+  font-size: 3.8rem;
+  color: var(--oscuro);
+
+  font-weight: bold;
+}
+
+.titulo span {
+
+  font-size: 2rem;
+}
+
+.contenedor {
+  /* 1200 px */
+  max-width: 120rem;
+  /* centramos el nav */
+  /* margin-top: 0;
+  /* no sepracion*/
+  /* margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; */
+  margin: 0 auto;
+}
+
+.nav-bg {
+  background-color: var(--oscuro)
+}
+
+.navegacionPrincipal {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* dispositivos movile */
+
+
+.navegacionPrincipal a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+@media (min-width:768px){
+  .navegacionPrincipal {
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.navegacionPrincipal a:hover{
+
+  background-color: #12b639c8;
+  color: var(--cafe);
+}
+.hero{
+  background-image:url(../img/2.jpg) ;
+
+}
